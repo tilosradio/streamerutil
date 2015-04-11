@@ -3,10 +3,10 @@
 import os, sys, time, signal, socket, select, stat
 
 #hostName = ''
-hostName = 'stream.tilos.hu'
+hostName = '46.4.10.101'
 portNumber = 80
 mountPoint = '/tilos'
-pathPrefix = '/tmp/'
+pathPrefix = '/host/archive'
 secondsToRun = 30 * 60 + 2
 fileUid = 2036
 fileGid = 80
