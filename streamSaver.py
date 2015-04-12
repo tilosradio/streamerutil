@@ -3,9 +3,9 @@
 import os, sys, time, signal, socket, select, stat
 
 #hostName = ''
-hostName = '46.4.10.101'
-portNumber = 80
-mountPoint = '/tilos'
+hostName = os.environ['STREAM_SERVER']
+portNumber = int(os.environ['STREAM_PORT'])
+mountPoint = os.environ['STREAM_MOUNT']
 pathPrefix = '/host/archive'
 secondsToRun = 30 * 60 + 2
 fileUid = 2036

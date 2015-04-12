@@ -1,0 +1,8 @@
+streamsaver:
+  image: tilos/streamsaver
+  volumes:
+   - "/tmp/qwe:/host/archive"
+  environment:
+   - STREAM_SERVER=stream.tilos.hu
+   - STREAM_PORT=8000
+   - STREAM_MOUNT=/digital
